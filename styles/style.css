@@ -7,9 +7,16 @@
 
 @font-face {
     font-family: 'Figtree';
-    src: url('../font/Figtree-VariableFont_wght.ttf') format('ttf');
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: bold;
 }
 
 *
@@ -22,15 +29,18 @@ body{
     height: 100vh;
     font-family: 'Figtree', sans-serif;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    letter-spacing: 0px;
     color: var(--col-gray-950);
     background-color: var(--col-yellow);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .card{
-    max-width: 20rem;
+    width: 21rem;
     background-color: var(--col-white);
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     border: solid 1px var(--col-gray-950);
     box-shadow: 0.5rem 0.5rem 0px var(--col-gray-950);
@@ -40,16 +50,17 @@ body{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    
 }
 
 .card-link{
+    display: block;
+    min-width: fit-content;
     background-color: var(--col-yellow);
-    padding: 0.25em;
+    padding: 0.5em 0.75rem;
     max-width: 10%;
     border-radius: 0.25em;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 900;
     font-size: .75rem;
     color: var(--col-gray-950);
 }
@@ -57,10 +68,19 @@ body{
 .illustration-article
 {
     border-radius: 0.75rem;
-    max-width: 100%;
-    
+    width: 100%;
+    margin-bottom: 1rem;;
 }
 
+h1{
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+    color: var(--col-gray-950);
+}
 h5{
-    display: inline;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
